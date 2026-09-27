@@ -1,0 +1,2 @@
+{% extends 'base.html' %}{% block title %}Student Registration{% endblock %}{% block content %}
+<div class="card shadow"><div class="card-body"><h3>Student Registration</h3><form method="post">{% csrf_token %}{{form.as_p}}<button class="btn btn-primary">Create Account</button></form></div></div>{% endblock %}
